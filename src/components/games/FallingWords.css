@@ -1,0 +1,7 @@
+.falling-words-game { padding: 20px; }
+.game-info { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:10px; }
+.game-container { background: rgba(0,0,0,0.03); border-radius:8px; }
+.falling-word { font-weight:bold; }
+.game-over-overlay { position:absolute; top:0; left:0; right:0; bottom:0; display:flex; align-items:center; justify-content:center; background: rgba(0,0,0,0.6); }
+.game-input { display:block; margin: 10px auto; }
+@keyframes fall { from { transform: translateY(-20px); } to { transform: translateY(100%); } }

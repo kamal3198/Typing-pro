@@ -1,10 +1,11 @@
 import React, { useState, useContext } from 'react';
 import { motion } from 'framer-motion';
-import { ThemeContext } from '../contexts/ThemeContext';
+import { useTheme } from '../contexts/ThemeContext';
 import { useSound } from '../contexts/SoundContext';
 
 const Settings = () => {
-  const { isDark, toggleTheme } = useContext(ThemeContext);
+  const { theme, toggleTheme } = useTheme();
+  const isDark = theme === 'dark';
   const { isSoundOn, toggleSound } = useSound();
   const [fontFamily, setFontFamily] = useState(localStorage.getItem('fontFamily') || 'monospace');
 

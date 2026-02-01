@@ -4,10 +4,10 @@ import { SoundProvider } from './contexts/SoundContext';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import NormalTest from './pages/NormalTest';
-import ParagraphTest from './pages/ParagraphTest';
+import ParagraphTest from './pages/ParagraphTest.tsx';
 import Games from './pages/Games';
 import History from './pages/History';
-import Progress from './pages/Progress';
+import Progress from './pages/Progress.tsx';
 import Settings from './pages/Settings';
 import './App.css';
 
